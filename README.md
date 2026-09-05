@@ -18,6 +18,10 @@ https://raw.githubusercontent.com/pallak83-tech/retirement-content/main/content.
 
 여기 파일만 고치면 다음 갱신 때 덮어써집니다.
 
+올리는 것도 손으로 하지 않습니다. 앱 저장소에서 `python tools/publish_content.py` 를
+실행하면 빌드·출처 검사·올리기·확인까지 한 번에 합니다. 이 README 의 개수 표도
+그때 실제 파일에 맞춰 다시 씁니다.
+
 ## 담긴 것
 
 | | 개수 |
