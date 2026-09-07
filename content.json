@@ -1,6 +1,6 @@
 {
- "version": "2026.1",
- "updated": "2026-09-05",
+ "version": "2026.2",
+ "updated": "2026-09-07",
  "disclaimer": "이 앱은 정보 제공을 목적으로 하며 세무·법률·투자 자문이 아닙니다. 제도와 금액은 해마다 바뀌므로, 확정 금액은 각 기관 조회 결과를 기준으로 봐 주세요.",
  "calc": {
   "basis_year": 2026,
@@ -590,7 +590,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-midcareer-center",
@@ -600,7 +600,7 @@
     "type": "before_retirement",
     "months": 6
    },
-   "free": false,
+   "free": true,
    "why": "만 40세 이상 중장년을 대상으로 생애경력설계, 재취업 알선, 창업 상담을 무료로 제공합니다. 퇴직 전에도 이용할 수 있고, 지역별 채용 수요를 실제 숫자로 들을 수 있어 막연한 계획을 좁히는 데 도움이 됩니다.",
    "when": "퇴직 6개월 전부터",
    "materials": [
@@ -619,7 +619,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-training-card",
@@ -629,7 +629,7 @@
     "type": "before_retirement",
     "months": 3
    },
-   "free": false,
+   "free": true,
    "why": "직업훈련 비용을 국가가 지원하는 카드입니다. 1인당 5년간 300만원을 기본으로 요건에 따라 최대 500만원까지 지원되고, 훈련 과정의 성격과 취업률에 따라 본인부담률이 달라집니다. 재직 중에도 발급받을 수 있어 미리 만들어 두면 퇴직 직후 바로 훈련을 시작할 수 있습니다.",
    "when": "퇴직 3개월 전. 재직 중 발급 가능",
    "materials": [
@@ -652,7 +652,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-irp-provider",
@@ -684,7 +684,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-lost-pension",
@@ -694,7 +694,7 @@
     "type": "anytime",
     "months": 0
    },
-   "free": false,
+   "free": true,
    "why": "회사가 폐업했거나 이직 과정에서 잊고 지나간 퇴직연금 적립금이 남아 있는 경우가 있습니다. 금융감독원 통합연금포털에서 본인 명의로 가입된 연금을 한 번에 조회할 수 있습니다. 몇 분이면 확인됩니다.",
    "when": "언제든",
    "materials": [
@@ -712,7 +712,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-unemployment-credit",
@@ -746,7 +746,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-early-reemployment",
@@ -756,7 +756,7 @@
     "type": "after_retirement",
     "months": 2
    },
-   "free": false,
+   "free": true,
    "why": "구직급여를 받다가 일찍 재취업하면 남은 급여의 절반을 수당으로 받습니다. 실업 신고일부터 14일이 지난 뒤 재취업하고, 재취업한 날 전날 기준으로 소정급여일수를 절반 이상 남겼으며, 12개월 이상 계속 고용되거나 사업을 이어 가면 대상이 됩니다. 지급액은 구직급여일액 × 남은 일수 × 2분의 1입니다.",
    "when": "재취업 후 12개월이 지난 시점에 신청",
    "materials": [
@@ -779,7 +779,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-nps-catchup",
@@ -809,7 +809,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-fixed-cost-cut",
@@ -843,7 +843,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-work-benefit",
@@ -877,7 +877,613 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
+  },
+  {
+   "id": "early-nps-history",
+   "part": 1,
+   "title": "국민연금 가입 이력에 빈 기간이 있는지 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "why": "국민연금은 가입 기간이 길수록 수령액이 늘어납니다. 이직 사이의 공백, 사업장 폐업, 납부 예외로 비어 있는 달이 있으면 그만큼 줄어듭니다. 추후납부나 임의가입으로 메울 수 있지만 그러려면 시간과 여윳돈이 필요합니다. 퇴직이 가까워진 뒤에 알면 선택지가 없습니다.",
+   "when": "지금. 빈 기간을 메울 시간이 남아 있을 때가 값어치가 있습니다",
+   "materials": [
+    "공동인증서 또는 간편인증",
+    "국민연금공단 내 연금 알아보기"
+   ],
+   "caution": "빈 기간이 있다고 반드시 메워야 하는 것은 아닙니다. 추후납부는 목돈이 들고, 그 돈을 다른 곳에 두는 편이 나은 경우도 있습니다. 금액을 확인한 뒤 판단하시는 편이 좋습니다.",
+   "source": {
+    "org": "국민연금공단",
+    "year": 2026,
+    "url": "https://www.nps.or.kr",
+    "note": "가입 내역 조회 · 추후납부 제도",
+    "doc": "국민연금법 제92조 (추후납부)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-dc-neglected",
+   "part": 1,
+   "title": "DC형 퇴직연금을 넣어만 두고 있는지 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "conditions": {
+    "severance_type": [
+     "dc",
+     "unknown"
+    ]
+   },
+   "why": "DC형은 회사가 매년 넣어 주는 돈을 본인이 운용합니다. 운용 지시를 한 번도 하지 않으면 사전지정운용제도(디폴트옵션)나 원리금보장형에 머무릅니다. 퇴직까지 남은 기간이 길수록 이 차이가 쌓입니다. 지금 확인하면 되돌릴 시간이 있습니다.",
+   "when": "지금. 남은 기간이 길수록 손볼 값어치가 큽니다",
+   "materials": [
+    "퇴직연금 사업자(은행·증권사) 앱 또는 홈페이지",
+    "회사 인사팀 안내문"
+   ],
+   "caution": "수익률을 높이려다 원금이 줄 수도 있습니다. 퇴직이 가까워질수록 안전한 쪽으로 옮기는 것이 일반적인 방식입니다. 사업자마다 상품이 다르니 직접 확인하셔야 합니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.moel.go.kr",
+    "note": "확정기여형 퇴직연금 운용 지시 · 사전지정운용제도",
+    "doc": "근로자퇴직급여 보장법 제21조·제21조의2 (사전지정운용방법)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-cert-long-lead",
+   "part": 1,
+   "title": "오래 걸리는 자격증이라면 지금이 시작 시점인지 따져 보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "why": "자격증은 준비 기간이 몇 달짜리부터 몇 년짜리까지 제각각입니다. 실무 경력을 요구하는 자격은 시험에 붙어도 등록까지 시간이 더 걸립니다. 퇴직 2년 전에 알아보면 긴 것은 이미 늦습니다. 지금 목록을 훑어 두면 언제 시작할지만 정하면 됩니다.",
+   "when": "지금 후보를 정하고, 필요한 준비 기간만큼 역산해 착수 시점을 정합니다",
+   "materials": [
+    "큐넷 종목별 시험 일정",
+    "3부 다음 일 · 자격증 목록"
+   ],
+   "caution": "자격증이 곧 수입은 아닙니다. 3부의 합격률과 취득 후 소득 숫자를 함께 보시고 정하시는 편이 좋습니다.",
+   "source": {
+    "org": "한국산업인력공단",
+    "year": 2026,
+    "url": "https://www.q-net.or.kr",
+    "note": "국가기술자격 종목별 시험 일정과 응시 자격",
+    "doc": "국가기술자격법 시행규칙 (응시자격 · 실무경력 요건)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-db-dc-switch",
+   "part": 1,
+   "title": "임금피크제 전에 DB형과 DC형 중 어느 쪽이 유리한지 판단",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": false,
+   "conditions": {
+    "severance_type": [
+     "db",
+     "unknown"
+    ]
+   },
+   "why": "DB형 퇴직급여는 퇴직 직전 3개월 평균임금으로 정해집니다. 임금피크제로 임금이 줄면 그 낮아진 임금이 기준이 됩니다. DC형은 매년 넣어 준 돈이 쌓이는 방식이라 임금이 줄어도 그전에 쌓인 돈은 그대로입니다. 한번 DC로 옮기면 DB로 되돌릴 수 없으므로 임금피크 전에 판단해야 합니다.",
+   "when": "임금피크제 적용 2~3년 전",
+   "materials": [
+    "회사 퇴직연금 규약",
+    "최근 3년 임금 명세",
+    "임금피크제 적용 시점과 감액률"
+   ],
+   "caution": "회사가 두 제도를 모두 운영해야 선택할 수 있습니다. 전환은 되돌릴 수 없으니 인사팀에 정확한 조건을 확인하신 뒤 결정하시는 편이 안전합니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.moel.go.kr",
+    "note": "확정급여형·확정기여형 퇴직연금 제도 전환",
+    "doc": "근로자퇴직급여 보장법 제13조·제19조 (급여 산정 · 제도 전환)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-career-record",
+   "part": 1,
+   "title": "경력을 지금부터 문서로 남기기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": true,
+   "conditions": {
+    "direction": [
+     "reemploy",
+     "business",
+     "cert",
+     "unsure"
+    ]
+   },
+   "why": "재취업이든 자문이든, 무엇을 했는지 증명할 수 있어야 값을 받습니다. 퇴직 직전에 몰아서 쓰면 연도와 숫자가 기억나지 않습니다. 맡은 일과 결과를 그때그때 한두 줄로 남겨 두면 나중에 이력서와 경력기술서가 됩니다.",
+   "when": "지금부터 반기에 한 번",
+   "materials": [
+    "프로젝트 이름·기간·역할·결과 숫자",
+    "발급 가능한 사내 증빙"
+   ],
+   "caution": "회사 기밀이나 고객 정보가 들어가지 않게 하셔야 합니다. 숫자는 공개 가능한 범위로만 적습니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.work24.go.kr",
+    "note": "직업능력 이력 관리 · 경력개발 안내",
+    "doc": "고용정책 기본법 제6조 (직업능력개발 지원)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-outside-network",
+   "part": 1,
+   "title": "회사 밖에서 나를 아는 사람 만들기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": true,
+   "why": "퇴직 후 일자리는 공고보다 아는 사람을 통해 오는 경우가 많습니다. 회사 명함이 있을 때는 연락이 오지만 없어지면 끊깁니다. 업계 모임, 협회, 스터디처럼 회사와 무관하게 나를 아는 자리를 미리 만들어 두면 퇴직 후에도 남습니다.",
+   "when": "지금부터 꾸준히. 급할 때 만들면 늦습니다",
+   "materials": [
+    "업종별 협회·학회",
+    "지역 직능 모임"
+   ],
+   "caution": "인맥을 넓히는 것 자체가 목적이 되면 오래가지 않습니다. 실제로 관심 있는 주제 한두 개로 좁히시는 편이 낫습니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.work24.go.kr",
+    "note": "중장년 재취업 경로 · 구인 경로별 취업 현황",
+    "doc": "고용정책 기본법 제6조 (취업 지원)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-business-small-test",
+   "part": 1,
+   "title": "자영업을 생각한다면 작게 먼저 시험해 보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": false,
+   "conditions": {
+    "direction": [
+     "business",
+     "unsure"
+    ]
+   },
+   "why": "퇴직금을 넣고 시작하면 실패했을 때 되돌릴 방법이 없습니다. 급여가 나오는 동안 주말이나 소액으로 같은 일을 해 보면, 내가 그 일을 견딜 수 있는지와 실제로 얼마가 남는지를 잃는 돈 없이 알 수 있습니다.",
+   "when": "퇴직 10년 전부터. 월급이 나올 때가 시험하기 가장 안전합니다",
+   "materials": [
+    "소상공인시장진흥공단 상권정보",
+    "생각 중인 업종의 실제 마진 구조"
+   ],
+   "caution": "겸업 금지 조항이 있는 회사가 있습니다. 취업규칙을 먼저 확인하시는 편이 안전합니다.",
+   "source": {
+    "org": "중소벤처기업부",
+    "year": 2026,
+    "url": "https://www.mss.go.kr",
+    "note": "소상공인 창업 준비 · 상권정보시스템",
+    "doc": "소상공인 보호 및 지원에 관한 법률 제9조 (창업 지원)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-job-requirements",
+   "part": 1,
+   "title": "가고 싶은 자리의 자격 요건을 미리 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 60
+   },
+   "free": true,
+   "conditions": {
+    "direction": [
+     "reemploy",
+     "cert",
+     "unsure"
+    ]
+   },
+   "why": "중장년 채용 공고에는 특정 자격증이나 경력 연수가 조건으로 붙는 경우가 많습니다. 지금 공고를 몇 개 열어 보면 무엇이 모자란지 바로 보입니다. 5년이 남아 있으면 대부분 채울 수 있습니다.",
+   "when": "퇴직 5년 전. 자격을 채울 시간이 남아 있을 때",
+   "materials": [
+    "고용24 채용 공고",
+    "중장년내일센터 상담"
+   ],
+   "caution": "공고의 나이·경력 조건이 실제 채용 기준과 다를 수 있습니다. 여러 건을 놓고 겹치는 조건을 보시는 편이 정확합니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.work24.go.kr",
+    "note": "고용24 채용 정보 · 중장년내일센터",
+    "doc": "고용상 연령차별금지 및 고령자고용촉진에 관한 법률 제15조 (중장년 취업 지원)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-cert-exam-schedule",
+   "part": 1,
+   "title": "자격증 시험 일정을 역산해 응시 계획 세우기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 36
+   },
+   "free": false,
+   "conditions": {
+    "direction": [
+     "cert",
+     "reemploy",
+     "unsure"
+    ]
+   },
+   "why": "국가기술자격은 종목마다 연간 시행 횟수가 정해져 있습니다. 한 번 떨어지면 다음 회차까지 몇 달을 기다립니다. 시험 일정에서 거꾸로 세어 공부 시작일을 잡아야 퇴직 전에 손에 쥘 수 있습니다.",
+   "when": "퇴직 3년 전. 두세 번 응시할 여유를 남겨 둡니다",
+   "materials": [
+    "큐넷 종목별 시행 계획",
+    "필기·실기 사이 간격"
+   ],
+   "caution": "필기 합격은 유효 기간이 있어 그 안에 실기를 붙어야 합니다. 종목별로 다르니 확인이 필요합니다.",
+   "source": {
+    "org": "한국산업인력공단",
+    "year": 2026,
+    "url": "https://www.q-net.or.kr",
+    "note": "국가기술자격 시행 계획 · 필기 합격 유효기간",
+    "doc": "국가기술자격법 시행령 제21조 (시험의 시행)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-biz-margin-study",
+   "part": 1,
+   "title": "하고 싶은 업종이 실제로 얼마가 남는지 알아보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": false,
+   "conditions": {
+    "direction": [
+     "business",
+     "unsure"
+    ]
+   },
+   "why": "매출이 커도 임대료·인건비·재료비를 빼면 남는 것이 적은 업종이 있습니다. 창업을 결심한 뒤에 알아보면 이미 돈이 들어간 뒤입니다. 지금은 아무것도 걸지 않고 숫자만 볼 수 있습니다. 상권정보시스템에 업종별 평균 매출과 폐업률이 공개돼 있습니다.",
+   "when": "지금. 결정하기 전이 알아볼 때입니다",
+   "materials": [
+    "소상공인 상권정보시스템",
+    "관심 업종의 임대료·인건비·재료비 비중"
+   ],
+   "caution": "평균은 평균일 뿐입니다. 같은 업종도 자리와 운영에 따라 크게 갈립니다. 실제로 하는 분께 물어보시는 편이 훨씬 정확합니다.",
+   "source": {
+    "org": "중소벤처기업부",
+    "year": 2026,
+    "url": "https://www.mss.go.kr",
+    "note": "소상공인 상권정보시스템 · 업종별 매출과 생존율",
+    "doc": "소상공인 보호 및 지원에 관한 법률 제10조 (상권정보 제공)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-biz-seed-money",
+   "part": 1,
+   "title": "창업 자금은 퇴직금과 따로 모으기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "conditions": {
+    "direction": [
+     "business",
+     "unsure"
+    ]
+   },
+   "why": "퇴직금을 창업에 넣으면 실패했을 때 노후 자금이 함께 사라집니다. 15년이 남아 있다면 매달 조금씩 따로 모아 창업 자금을 만들 수 있습니다. 그러면 실패해도 노후는 남습니다. 이것이 퇴직 직전에 창업을 결심한 사람과 갈리는 지점입니다.",
+   "when": "지금부터. 금액보다 따로 두는 것이 중요합니다",
+   "materials": [
+    "창업 예상 자금",
+    "월 저축 가능액"
+   ],
+   "caution": "창업 자금은 초기 투자만이 아니라 매출이 없는 기간의 운영비까지 봐야 합니다. 최소 6개월치를 더 잡으시는 편이 안전합니다.",
+   "source": {
+    "org": "중소벤처기업부",
+    "year": 2026,
+    "url": "https://www.mss.go.kr",
+    "note": "소상공인 창업 자금 구성 · 정책자금 안내",
+    "doc": "소상공인 보호 및 지원에 관한 법률 제9조 (창업 지원)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-skill-outside",
+   "part": 1,
+   "title": "회사 밖에서도 통하는 기술 하나 정하기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": false,
+   "why": "회사 안에서만 쓰이는 일은 퇴직과 함께 값이 사라집니다. 회사 이름 없이도 남이 돈을 내고 살 만한 기술이 하나 있으면 퇴직 후 선택지가 생깁니다. 무엇으로 할지 정하는 데만도 시간이 걸리므로 지금 시작하는 편이 낫습니다.",
+   "when": "지금 후보를 정하고, 매년 조금씩 쌓습니다",
+   "materials": [
+    "지금 하는 일 중 회사 밖에서도 쓰이는 부분",
+    "국민내일배움카드 훈련 과정"
+   ],
+   "caution": "유행하는 기술을 좇으면 몇 년 뒤 다시 바뀝니다. 지금 하는 일과 이어지는 쪽이 오래갑니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.work24.go.kr",
+    "note": "국민내일배움카드 직업훈련 과정",
+    "doc": "국민 평생 직업능력 개발법 제18조 (직업능력개발계좌)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-degree-path",
+   "part": 1,
+   "title": "학위나 긴 교육이 필요한 길인지 먼저 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "conditions": {
+    "direction": [
+     "cert",
+     "reemploy",
+     "unsure"
+    ]
+   },
+   "why": "사회복지사나 평생교육사처럼 학점 이수를 요구하는 자격이 있습니다. 학점은행제나 사이버대는 1~4년이 걸립니다. 직장에 다니면서 하려면 더 걸립니다. 퇴직 몇 년 전에 알면 이 길은 아예 닫힙니다.",
+   "when": "지금. 필요한 기간만큼 역산해 시작 시점을 정합니다",
+   "materials": [
+    "목표 자격의 학점·실습 요건",
+    "학점은행제 학습과정 검색"
+   ],
+   "caution": "학위나 학점을 채워도 자리가 보장되지는 않습니다. 3부의 취득 후 소득 숫자를 먼저 보시는 편이 좋습니다.",
+   "source": {
+    "org": "국가평생교육진흥원",
+    "year": 2026,
+    "url": "https://www.nile.or.kr",
+    "note": "학점은행제 학습과정 · 자격 취득 학점 요건",
+    "doc": "학점인정 등에 관한 법률 제7조 (학점의 인정)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-market-price",
+   "part": 1,
+   "title": "지금 내 경력이 회사 밖에서 얼마인지 알아보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": false,
+   "conditions": {
+    "direction": [
+     "reemploy",
+     "unsure"
+    ]
+   },
+   "why": "회사 안의 직급과 회사 밖의 값은 다릅니다. 퇴직하고 나서 처음 알면 충격이 크고 선택할 시간도 없습니다. 지금 같은 경력을 뽑는 공고 몇 개만 열어 봐도 대략의 값이 보입니다. 차이가 크다면 메울 시간이 15년 남아 있습니다.",
+   "when": "지금. 그리고 몇 년에 한 번씩 다시",
+   "materials": [
+    "고용24 채용 공고",
+    "동종 업계 이직자 이야기"
+   ],
+   "caution": "공고에 적힌 금액은 상한인 경우가 많습니다. 실제 계약 조건은 더 낮을 수 있습니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.work24.go.kr",
+    "note": "고용24 채용 정보 · 직종별 임금 정보",
+    "doc": "고용정책 기본법 제15조 (고용 정보의 제공)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-cert-experience-req",
+   "part": 1,
+   "title": "실무경력을 요구하는 자격이라면 지금 경력을 쌓아 두기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": false,
+   "conditions": {
+    "direction": [
+     "cert",
+     "reemploy",
+     "unsure"
+    ]
+   },
+   "why": "기사 등급 자격은 관련 학과 졸업이나 몇 년의 실무경력을 응시 조건으로 요구합니다. 퇴직 후에는 그 경력을 쌓을 자리가 없습니다. 회사에 있는 동안 해당 업무를 맡아 두거나 경력증명서에 남을 형태로 만들어 두어야 합니다.",
+   "when": "퇴직 10년 전. 회사에서 그 업무를 맡을 수 있을 때",
+   "materials": [
+    "목표 자격의 응시자격 요건",
+    "현재 담당 업무와의 연관성"
+   ],
+   "caution": "경력으로 인정되는 범위가 자격마다 다릅니다. 큐넷 응시자격 자가진단으로 미리 확인하셔야 헛수고를 피합니다.",
+   "source": {
+    "org": "한국산업인력공단",
+    "year": 2026,
+    "url": "https://www.q-net.or.kr",
+    "note": "국가기술자격 응시자격 · 실무경력 인정 기준",
+    "doc": "국가기술자격법 시행령 제12조의2 (응시자격)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-biz-license-check",
+   "part": 1,
+   "title": "생각 중인 업종에 면허나 자격이 필요한지 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": true,
+   "conditions": {
+    "direction": [
+     "business",
+     "unsure"
+    ]
+   },
+   "why": "음식점은 위생교육과 영업신고가, 부동산 중개는 공인중개사 자격이 있어야 합니다. 준비 없이 자리부터 계약하면 열지 못한 채 임대료만 나갑니다. 미리 알면 자격을 먼저 갖추고 시작할 수 있습니다.",
+   "when": "퇴직 10년 전. 자격이 필요하다면 그때부터 준비합니다",
+   "materials": [
+    "관심 업종의 인허가 요건",
+    "정부24 인허가 안내"
+   ],
+   "caution": "같은 업종도 지자체마다 조건이 다를 수 있습니다. 실제로 열 지역의 시군구청에 확인하시는 편이 정확합니다.",
+   "source": {
+    "org": "행정안전부",
+    "year": 2026,
+    "url": "https://www.gov.kr",
+    "note": "정부24 인허가 민원 안내",
+    "doc": "행정기본법 제16조 (인허가의 기준)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-digital-tools",
+   "part": 1,
+   "title": "혼자서 문서·회계·홍보를 처리할 수 있게 익혀 두기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": false,
+   "why": "회사에서는 총무나 회계가 대신해 주던 일을 퇴직 후에는 혼자 합니다. 세금계산서, 간단한 장부, 온라인 홍보가 여기에 들어갑니다. 못 하면 사람을 써야 하고 그만큼 남는 돈이 줄어듭니다. 재취업을 하더라도 실무를 직접 하는 자리가 많습니다.",
+   "when": "퇴직 10년 전부터 하나씩",
+   "materials": [
+    "국민내일배움카드",
+    "지역 평생학습관 무료 강좌"
+   ],
+   "caution": "자격증을 따는 것이 목적이 아닙니다. 실제로 내 일에 쓸 수 있는 만큼이면 충분합니다.",
+   "source": {
+    "org": "고용노동부",
+    "year": 2026,
+    "url": "https://www.work24.go.kr",
+    "note": "국민내일배움카드 훈련 과정 · 중장년 직업능력개발",
+    "doc": "국민 평생 직업능력 개발법 제18조 (직업능력개발계좌)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-biz-walk-market",
+   "part": 1,
+   "title": "열려는 자리를 직접 걸어 보며 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 60
+   },
+   "free": true,
+   "conditions": {
+    "direction": [
+     "business"
+    ]
+   },
+   "why": "상권 자료는 평균이고, 실제로 사람이 다니는지는 시간대마다 다릅니다. 평일 낮과 저녁, 주말을 각각 걸어 보면 자료에 없는 것이 보입니다. 계약하고 나서 알면 되돌릴 수 없습니다.",
+   "when": "퇴직 5년 전부터. 여러 자리를 여러 번",
+   "materials": [
+    "관심 지역 몇 곳",
+    "시간대별 유동 인구 확인"
+   ],
+   "caution": "임대료가 싼 자리는 싼 이유가 있습니다. 왜 비어 있는지를 먼저 알아보시는 편이 좋습니다.",
+   "source": {
+    "org": "중소벤처기업부",
+    "year": 2026,
+    "url": "https://www.mss.go.kr",
+    "note": "소상공인 상권정보시스템 · 점포 이력과 임대 시세",
+    "doc": "소상공인 보호 및 지원에 관한 법률 제10조 (상권정보 제공)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
   },
   {
    "id": "admin-rules-check",
@@ -906,7 +1512,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-severance-type",
@@ -940,7 +1546,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-outplacement",
@@ -975,7 +1581,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-pension-estimate",
@@ -1004,7 +1610,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-credit-line",
@@ -1033,7 +1639,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-mortgage-check",
@@ -1067,7 +1673,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-child-support-end",
@@ -1102,7 +1708,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-annual-leave",
@@ -1135,7 +1741,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-health-checkup",
@@ -1167,7 +1773,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-group-insurance",
@@ -1196,7 +1802,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-company-loan",
@@ -1224,7 +1830,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-dc-portfolio",
@@ -1259,7 +1865,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-welfare-points",
@@ -1290,7 +1896,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-certificates",
@@ -1318,7 +1924,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-personal-files",
@@ -1345,7 +1951,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-irp-open",
@@ -1379,7 +1985,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-unemployment-eligibility",
@@ -1389,7 +1995,7 @@
     "type": "before_retirement",
     "months": 1
    },
-   "free": false,
+   "free": true,
    "why": "실업급여는 퇴직 사유가 비자발적이어야 받을 수 있습니다. 정년퇴직, 계약만료, 권고사직은 해당되지만 자발적 사직은 원칙적으로 대상이 아닙니다. 퇴직 사유가 어떻게 기록되는지에 따라 결과가 갈리므로 퇴직 전에 확인해 두시는 편이 좋습니다.",
    "when": "퇴직 1개월 전",
    "materials": [
@@ -1409,7 +2015,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-return-assets",
@@ -1437,7 +2043,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-retirement-docs",
@@ -1447,7 +2053,7 @@
     "type": "after_retirement",
     "months": 0
    },
-   "free": false,
+   "free": true,
    "why": "이직확인서는 실업급여 신청의 필수 서류이고, 퇴직증명서는 건강보험 임의계속가입과 각종 신청에 쓰입니다. 회사가 자동으로 처리해 주지 않는 경우가 있으므로 퇴직 직후에 요청해 두는 편이 빠릅니다.",
    "when": "퇴직 직후",
    "materials": [
@@ -1465,7 +2071,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-withholding-receipt",
@@ -1493,7 +2099,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-jobseeker-registration",
@@ -1503,7 +2109,7 @@
     "type": "after_retirement",
     "months": 0
    },
-   "free": false,
+   "free": true,
    "why": "실업급여는 퇴직했다고 자동으로 나오지 않습니다. 워크넷 구직등록을 하고 고용센터에 수급자격 인정을 신청해야 시작됩니다. 신청이 늦어지면 그만큼 받는 기간이 줄어듭니다.",
    "when": "퇴직 다음 날부터. 12개월이 지나면 남은 일수가 있어도 받을 수 없습니다",
    "materials": [
@@ -1528,7 +2134,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-health-voluntary",
@@ -1538,7 +2144,7 @@
     "type": "after_retirement",
     "months": 1
    },
-   "free": false,
+   "free": true,
    "conditions": {
     "spouse_employed": [
      "no",
@@ -1568,7 +2174,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-health-dependent",
@@ -1607,7 +2213,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-nps-after",
@@ -1637,7 +2243,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-insurance-status",
@@ -1647,7 +2253,7 @@
     "type": "after_retirement",
     "months": 1
    },
-   "free": false,
+   "free": true,
    "why": "회사가 상실 신고를 늦게 하면 보험료가 이중으로 부과되거나 실업급여 신청이 막힙니다. 퇴직 후 한 달 안에 네 가지 자격이 제대로 정리됐는지 직접 확인해 두면 나중에 되돌리는 수고를 덜 수 있습니다.",
    "when": "퇴직 후 1개월 이내",
    "materials": [
@@ -1665,7 +2271,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-health-premium-adjust",
@@ -1675,7 +2281,7 @@
     "type": "after_retirement",
     "months": 3
    },
-   "free": false,
+   "free": true,
    "why": "지역가입 보험료는 지난해 소득 자료로 매겨집니다. 퇴직해서 소득이 끊겼는데도 재직 시절 소득 기준으로 보험료가 나오는 이유입니다. 퇴직을 증빙하면 소득 부분을 조정받을 수 있습니다.",
    "when": "지역가입 전환 후 보험료 고지를 받은 뒤",
    "materials": [
@@ -1695,7 +2301,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-tax-return",
@@ -1705,7 +2311,7 @@
     "type": "after_retirement",
     "months": 5
    },
-   "free": false,
+   "free": true,
    "why": "재직 중에는 회사가 연말정산을 해 주지만, 퇴직한 해의 소득은 다음 해 5월에 본인이 종합소득세로 신고해야 하는 경우가 있습니다. 중도 퇴직자는 회사에서 약식으로 정산되어 공제를 다 받지 못한 상태인 경우가 많아, 5월에 신고하면 돌려받는 금액이 생깁니다.",
    "when": "퇴직 다음 해 5월",
    "materials": [
@@ -1728,7 +2334,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-pension-start",
@@ -1758,7 +2364,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-senior-support",
@@ -1768,7 +2374,7 @@
     "type": "anytime",
     "months": 0
    },
-   "free": false,
+   "free": true,
    "why": "국민연금공단 지사에서 재무·건강·여가·대인관계 네 영역의 노후준비 진단과 상담을 무료로 받을 수 있습니다. 유료 강의에서 듣는 내용과 크게 다르지 않은데 비용이 들지 않습니다.",
    "when": "언제든",
    "materials": [
@@ -1786,7 +2392,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "admin-govt-pension",
@@ -1819,7 +2425,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-irp-order",
@@ -1850,7 +2456,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-fee-drag",
@@ -1880,7 +2486,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-financial-income",
@@ -1910,7 +2516,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-isa-rollover",
@@ -1944,7 +2550,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-couple-pension",
@@ -1980,7 +2586,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-first-year-calendar",
@@ -2011,7 +2617,190 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
+  },
+  {
+   "id": "early-pension-deduction-habit",
+   "part": 2,
+   "title": "연금저축·IRP 세액공제 한도를 매년 채우고 있는지",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "why": "연금저축과 IRP의 세액공제 한도는 해마다 새로 주어지고 남은 한도는 다음 해로 넘어가지 않습니다. 올해 채우지 않으면 그해 몫은 사라집니다. 퇴직이 멀수록 채울 수 있는 해가 많아 총액 차이가 커집니다. 늦게 알수록 되찾을 수 없는 돈입니다.",
+   "when": "매년. 12월 전에 한 번 확인하시면 됩니다",
+   "materials": [
+    "연금저축·IRP 계좌의 올해 납입액",
+    "올해 총급여"
+   ],
+   "caution": "중도 인출하면 공제받은 세금을 토해내야 합니다. 퇴직까지 묶어 둘 수 있는 돈만 넣으시는 편이 안전합니다.",
+   "effect": {
+    "label": "연 최대 절세",
+    "value": "148만 5천원"
+   },
+   "source": {
+    "org": "국세청",
+    "year": 2026,
+    "url": "https://www.hometax.go.kr",
+    "note": "연금계좌 세액공제 한도와 공제율",
+    "doc": "소득세법 제59조의3 (연금계좌세액공제)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "calc": "irp",
+   "version": "2026.2"
+  },
+  {
+   "id": "early-mortgage-plan",
+   "part": 2,
+   "title": "주택담보대출 상환이 퇴직 전에 끝나는지 계산",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": false,
+   "why": "퇴직 후에도 원리금이 나가면 연금으로 생활비와 대출을 함께 감당해야 합니다. 지금 만기와 남은 원금을 보면 퇴직 시점에 얼마가 남는지 바로 나옵니다. 기간이 길게 남아 있을 때는 상환 방식을 바꾸거나 더 갚는 선택지가 있습니다.",
+   "when": "지금. 남은 기간이 길수록 조정할 여지가 큽니다",
+   "materials": [
+    "대출 잔액과 만기",
+    "금리 유형(고정·변동)",
+    "중도상환수수료 조건"
+   ],
+   "caution": "무리해서 앞당겨 갚다가 비상금이 없어지면 더 비싼 돈을 빌리게 됩니다. 생활비 6개월치는 남겨 두시는 편이 좋습니다.",
+   "source": {
+    "org": "금융감독원",
+    "year": 2026,
+    "url": "https://100lifeplan.fss.or.kr",
+    "note": "은퇴 전 부채 정리 · 가계부채 관리 안내",
+    "doc": "금융소비자 보호에 관한 법률 제19조 (설명의무)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-insurance-remodel",
+   "part": 2,
+   "title": "갱신형 보험료가 언제부터 뛰는지 확인",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": false,
+   "why": "갱신형 실손·건강보험은 나이가 오를수록 보험료가 올라갑니다. 소득이 있을 때는 넘어가지만 퇴직 후 연금으로 내려면 부담이 됩니다. 지금 갱신 주기와 예상 보험료를 확인해 두면 정리할지 유지할지 판단할 시간이 있습니다.",
+   "when": "퇴직 10년 전. 해지하고 다시 드는 선택지가 아직 열려 있을 때",
+   "materials": [
+    "보험 증권",
+    "금융감독원 내보험 찾아줌"
+   ],
+   "caution": "오래된 실손은 보장이 지금 상품보다 나은 경우가 많습니다. 보험료만 보고 해지하면 손해일 수 있으니 보장 내용을 함께 보셔야 합니다.",
+   "source": {
+    "org": "금융감독원",
+    "year": 2026,
+    "url": "https://100lifeplan.fss.or.kr",
+    "note": "은퇴 준비 보험 점검 · 내보험 찾아줌",
+    "doc": "보험업법 제95조의2 (설명의무)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-health-premium-preview",
+   "part": 2,
+   "title": "퇴직하면 건강보험료가 얼마가 되는지 미리 보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 60
+   },
+   "free": true,
+   "why": "직장가입자일 때는 회사가 절반을 냅니다. 퇴직하면 지역가입자가 되어 소득뿐 아니라 재산에도 보험료가 매겨지고 전액을 본인이 냅니다. 집이 있으면 소득이 없어도 적지 않은 금액이 나옵니다. 5년 전에 알면 재산 구성이나 피부양자 등재를 준비할 시간이 있습니다.",
+   "when": "퇴직 5년 전",
+   "materials": [
+    "재산세 과세표준",
+    "예상 연간 소득"
+   ],
+   "caution": "이 앱의 계산은 추정치입니다. 확정 금액은 국민건강보험공단 모의계산에서 확인해 주세요.",
+   "source": {
+    "org": "국민건강보험공단",
+    "year": 2026,
+    "url": "https://www.nhis.or.kr",
+    "note": "지역가입자 보험료 부과 체계",
+    "doc": "국민건강보험법 제69조·제72조 (보험료 · 보험료부과점수)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "calc": "health",
+   "version": "2026.2"
+  },
+  {
+   "id": "early-couple-budget",
+   "part": 2,
+   "title": "부부가 퇴직 후 생활비를 한 번 맞춰 보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 60
+   },
+   "free": false,
+   "why": "퇴직 후 얼마가 필요한지에 대해 부부의 생각이 다른 경우가 많습니다. 숫자를 맞춰 보지 않으면 퇴직 직후에 갈등으로 나옵니다. 지금 한 번 적어 보면 모자란 금액이 나오고, 그 금액이 앞으로의 계획 기준이 됩니다.",
+   "when": "퇴직 5년 전. 모자란 만큼 준비할 시간이 있을 때",
+   "materials": [
+    "최근 6개월 카드·계좌 내역",
+    "예상 연금 수령액"
+   ],
+   "caution": "지금 지출을 그대로 쓰면 과대 추정이 됩니다. 자녀 교육비처럼 끝나는 항목과 의료비처럼 늘어나는 항목을 나눠 보시는 편이 정확합니다.",
+   "source": {
+    "org": "통계청",
+    "year": 2026,
+    "url": "https://kostat.go.kr",
+    "note": "가계동향조사 · 고령 가구 소비지출 구조",
+    "doc": "통계법 제17조 (지정통계)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "calc": "gap",
+   "version": "2026.2"
+  },
+  {
+   "id": "early-pension-timing-scenario",
+   "part": 2,
+   "title": "국민연금을 언제부터 받을지 시나리오 비교",
+   "timing": {
+    "type": "before_retirement",
+    "months": 36
+   },
+   "free": true,
+   "why": "국민연금은 앞당겨 받으면 줄고 늦춰 받으면 늘어납니다. 퇴직과 수급 개시 사이에 빈 기간이 생기면 그동안 무엇으로 살지도 함께 정해야 합니다. 3년 전에 계산해 두면 그 빈 기간을 메울 방법을 준비할 수 있습니다.",
+   "when": "퇴직 3년 전",
+   "materials": [
+    "국민연금 예상 수령액",
+    "퇴직 후 예상 소득"
+   ],
+   "caution": "이 앱의 계산은 추정치입니다. 확정 금액은 국민연금공단 내 연금 알아보기에서 확인해 주세요.",
+   "source": {
+    "org": "국민연금공단",
+    "year": 2026,
+    "url": "https://www.nps.or.kr",
+    "note": "조기노령연금·연기연금 감액률과 증액률",
+    "doc": "국민연금법 제61조·제62조·제66조 (노령연금 · 연기 · 조기)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "calc": "pension",
+   "version": "2026.2"
   },
   {
    "id": "money-pension-timing",
@@ -2045,7 +2834,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-gap",
@@ -2075,7 +2864,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-health-compare",
@@ -2109,7 +2898,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-severance-tax",
@@ -2119,7 +2908,7 @@
     "type": "before_retirement",
     "months": 2
    },
-   "free": false,
+   "free": true,
    "why": "일시금으로 받으면 그 자리에서 퇴직소득세를 냅니다. IRP로 옮기면 세금을 내지 않고 미뤘다가 연금으로 나눠 받을 때 덜 냅니다. 수령 10년째까지는 30%, 11년째부터는 40%, 21년째부터는 50%를 덜 냅니다. 오래 나눠 받을수록 세금이 줄어듭니다.",
    "when": "퇴직급여 지급 전. 이미 받았다면 60일 이내",
    "materials": [
@@ -2144,7 +2933,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-irp-credit",
@@ -2178,7 +2967,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-pension-income-tax",
@@ -2207,7 +2996,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-unemployment-amount",
@@ -2241,7 +3030,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-housing-pension",
@@ -2277,7 +3066,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-longevity",
@@ -2308,7 +3097,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-dependent-rules",
@@ -2344,7 +3133,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-severance-timing",
@@ -2374,7 +3163,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-emergency-fund",
@@ -2384,7 +3173,7 @@
     "type": "before_retirement",
     "months": 3
    },
-   "free": false,
+   "free": true,
    "why": "퇴직 직후는 소득이 끊기고 건강보험료와 세금은 그대로 나가는 구간입니다. 실업급여가 시작되기까지도 시간이 걸립니다. 이 시기에 자산을 급하게 처분하면 제값을 받기 어렵습니다.",
    "when": "퇴직 3개월 전",
    "materials": [
@@ -2407,7 +3196,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-tax-deduction-senior",
@@ -2417,7 +3206,7 @@
     "type": "after_retirement",
     "months": 6
    },
-   "free": false,
+   "free": true,
    "why": "근로소득이 없어지면 근로소득공제와 근로자만 받던 공제가 사라집니다. 대신 연금소득공제가 생기고, 만 70세 이상 경로우대 공제 같은 항목이 새로 적용됩니다. 어떤 것이 없어지고 무엇이 생기는지 알아야 실제 세후 소득을 계산할 수 있습니다.",
    "when": "퇴직 다음 해 신고 전",
    "materials": [
@@ -2436,7 +3225,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "money-basic-pension",
@@ -2446,7 +3235,7 @@
     "type": "anytime",
     "months": 0
    },
-   "free": false,
+   "free": true,
    "conditions": {
     "asset_band": [
      "under3",
@@ -2472,7 +3261,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-insurance-actual",
@@ -2482,7 +3271,7 @@
     "type": "before_retirement",
     "months": 6
    },
-   "free": false,
+   "free": true,
    "why": "실손보험은 가입 시기에 따라 1세대(2009년 10월 이전), 2세대(2017년 3월까지), 3세대(2021년 6월까지), 4세대(2021년 7월 이후)로 나뉘고 자기부담률이 크게 다릅니다. 1세대는 자기부담이 거의 없고, 3세대는 급여 10%·비급여 20%, 4세대는 비급여 이용량에 따라 보험료가 오르내립니다. 오래된 세대일수록 보장이 넓지만 보험료 인상 폭이 큽니다.",
    "when": "퇴직 6개월 전",
    "materials": [
@@ -2502,7 +3291,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-insurance-care",
@@ -2531,7 +3320,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-gift-plan",
@@ -2566,7 +3355,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-inheritance-basic",
@@ -2597,7 +3386,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-parent-ltc-grade",
@@ -2633,7 +3422,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-house-rent",
@@ -2669,7 +3458,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-strength",
@@ -2697,7 +3486,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-lifelong-learning",
@@ -2726,7 +3515,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-volunteer",
@@ -2760,7 +3549,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-digital-services",
@@ -2789,7 +3578,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-funeral-prep",
@@ -2818,7 +3607,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-own-time",
@@ -2852,7 +3641,191 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
+  },
+  {
+   "id": "early-health-checkup-habit",
+   "part": 4,
+   "title": "국가건강검진을 거르지 않고 받기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "why": "퇴직 후 가장 큰 변수는 건강입니다. 직장에 다닐 때는 검진이 자동으로 안내되지만 퇴직하면 스스로 챙겨야 합니다. 지금 거르지 않는 습관을 들여 두면 퇴직 후에도 이어집니다. 만 40세부터는 검사 항목도 늘어납니다.",
+   "when": "해당 연도마다. 국민건강보험공단이 대상자에게 안내합니다",
+   "materials": [
+    "건강검진 대상자 조회",
+    "가까운 검진기관"
+   ],
+   "caution": "검진은 병을 찾는 것이지 예방하는 것이 아닙니다. 결과에서 나온 지적 사항을 다음 해까지 그대로 두면 받은 의미가 없습니다.",
+   "source": {
+    "org": "국민건강보험공단",
+    "year": 2026,
+    "url": "https://www.nhis.or.kr",
+    "note": "일반건강검진 대상과 주기 · 연령별 추가 검사",
+    "doc": "건강검진기본법 제3조 · 국민건강보험법 제52조 (건강검진)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-strength-habit",
+   "part": 4,
+   "title": "지금부터 근력 운동 하나를 습관으로 만들기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 180
+   },
+   "free": true,
+   "why": "근육량은 나이가 들수록 자연히 줄고, 줄어든 뒤에 되돌리기는 훨씬 어렵습니다. 퇴직 후 일할 수 있는 기간과 의료비가 여기에 크게 걸립니다. 퇴직하고 시작하는 것보다 지금 몸에 익혀 두는 편이 확실합니다.",
+   "when": "지금부터. 주 2회면 충분합니다",
+   "materials": [
+    "집이나 회사 근처에서 이어갈 수 있는 방식"
+   ],
+   "caution": "무리한 강도로 시작하면 다치고 그만두게 됩니다. 오래 이어가는 것이 강도보다 중요합니다.",
+   "source": {
+    "org": "보건복지부",
+    "year": 2026,
+    "url": "https://www.mohw.go.kr",
+    "note": "한국인을 위한 신체활동 지침 · 근력운동 권고",
+    "doc": "국민건강증진법 제4조 (국민건강증진종합계획)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-child-cost-peak",
+   "part": 4,
+   "title": "자녀 교육비가 언제 끝나는지 연도로 적어 보기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": true,
+   "conditions": {
+    "dependents": [
+     "college",
+     "child"
+    ]
+   },
+   "why": "자녀 교육비가 끝나는 해와 퇴직하는 해가 겹치면 가장 어려운 시기가 됩니다. 두 시점을 연도로 적어 보면 겹치는지 아닌지가 바로 보입니다. 겹친다면 지금부터 준비할 수 있고, 겹치지 않는다면 그만큼 마음이 놓입니다.",
+   "when": "퇴직 10년 전",
+   "materials": [
+    "자녀 나이와 예상 졸업 연도",
+    "예상 퇴직 연도"
+   ],
+   "caution": "졸업 후에도 취업 전까지 지원이 이어지는 경우가 많습니다. 끝나는 시점을 넉넉히 잡으시는 편이 안전합니다.",
+   "source": {
+    "org": "교육부",
+    "year": 2026,
+    "url": "https://www.moe.go.kr",
+    "note": "대학 등록금 현황 · 학자금 지원 제도",
+    "doc": "고등교육법 제11조 (등록금)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-housing-downsize",
+   "part": 4,
+   "title": "지금 집에서 계속 살 것인지 생각해 두기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 120
+   },
+   "free": true,
+   "why": "퇴직 후 생활비에서 주거비가 차지하는 몫이 큽니다. 집을 줄이거나 옮기는 선택은 시간이 걸리고 시기를 놓치면 값을 제대로 못 받습니다. 지금 방향만 정해 두어도 나중에 급하게 정하지 않게 됩니다.",
+   "when": "퇴직 10년 전. 옮길 생각이라면 더 일찍",
+   "materials": [
+    "현재 집의 관리비·세금",
+    "자녀 독립 예상 시점"
+   ],
+   "caution": "집을 줄이면 건강보험 지역가입 보험료도 함께 달라집니다. 주거만 따로 보지 마시고 보험료와 함께 보시는 편이 정확합니다.",
+   "source": {
+    "org": "국토교통부",
+    "year": 2026,
+    "url": "https://www.molit.go.kr",
+    "note": "주거실태조사 · 고령 가구 주거 이동",
+    "doc": "주거기본법 제3조 (주거정책의 기본원칙)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-parent-care-talk",
+   "part": 4,
+   "title": "부모 부양과 상속 이야기를 미루지 않고 꺼내기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 60
+   },
+   "free": true,
+   "conditions": {
+    "dependents": [
+     "parent"
+    ]
+   },
+   "why": "부모의 간병이나 상속은 갑자기 닥치는 경우가 많고, 그때는 형제 사이에 이야기를 꺼내기가 더 어렵습니다. 미리 한 번 이야기해 두면 각자 무엇을 맡을지, 비용을 어떻게 나눌지가 정해집니다. 내 퇴직 시기와 겹치면 부담이 두 배가 됩니다.",
+   "when": "퇴직 5년 전. 아직 여유가 있을 때",
+   "materials": [
+    "부모의 건강 상태와 소득",
+    "형제 사이 역할 분담"
+   ],
+   "caution": "돈 이야기부터 꺼내면 감정이 상하기 쉽습니다. 간병을 누가 어떻게 할지부터 이야기하시는 편이 낫습니다.",
+   "source": {
+    "org": "보건복지부",
+    "year": 2026,
+    "url": "https://www.longtermcare.or.kr",
+    "note": "노인장기요양보험 등급과 본인부담",
+    "doc": "노인장기요양보험법 제15조·제40조 (등급판정 · 본인일부부담금)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
+  },
+  {
+   "id": "early-learning-habit",
+   "part": 4,
+   "title": "회사 일이 아닌 것을 하나 배워 두기",
+   "timing": {
+    "type": "before_retirement",
+    "months": 60
+   },
+   "free": true,
+   "why": "퇴직 후 갑자기 비는 시간을 무엇으로 채울지는 돈만큼이나 큰 문제입니다. 퇴직하고 나서 찾으면 의욕이 나지 않는 경우가 많습니다. 일하는 동안 이미 하고 있던 것이 하나 있으면 그대로 이어집니다. 그것이 나중에 일이 되는 경우도 있습니다.",
+   "when": "퇴직 5년 전부터",
+   "materials": [
+    "평생학습계좌제",
+    "지역 평생학습관·주민센터 프로그램"
+   ],
+   "caution": "돈이 되는지부터 따지면 오래 못 갑니다. 이어갈 수 있는 것을 고르시는 편이 낫습니다.",
+   "source": {
+    "org": "국가평생교육진흥원",
+    "year": 2026,
+    "url": "https://www.nile.or.kr",
+    "note": "평생학습계좌제 · 지역 평생교육 프로그램",
+    "doc": "평생교육법 제23조 (학습계좌)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "version": "2026.2"
   },
   {
    "id": "life-insurance-cleanup",
@@ -2886,7 +3859,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-spouse-talk",
@@ -2922,7 +3895,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-child-support-line",
@@ -2957,7 +3930,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-housing-decision",
@@ -2992,7 +3965,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-daily-routine",
@@ -3020,7 +3993,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-relationship-reset",
@@ -3048,7 +4021,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-parent-care",
@@ -3083,7 +4056,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "life-health-habit",
@@ -3093,7 +4066,7 @@
     "type": "anytime",
     "months": 0
    },
-   "free": false,
+   "free": true,
    "why": "노후 지출에서 가장 예측하기 어려운 항목이 의료비입니다. 보험으로 덮는 데는 한계가 있고, 가장 확실한 절감은 만성질환을 늦추는 것입니다. 국가건강검진은 퇴직 후에도 계속 받을 수 있고 비용이 들지 않습니다.",
    "when": "언제든. 검진은 2년마다",
    "materials": [
@@ -3111,7 +4084,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   }
  ],
  "next": [
@@ -3151,17 +4124,21 @@
     }
    ],
    "source": {
-    "org": "인사혁신처",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.gojobs.go.kr",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)",
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 채용은 인사혁신처·지자체 공고",
     "doc": "기간제 및 단시간근로자 보호 등에 관한 법률 제4조 · 나라일터 채용공고"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "public"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-consulting",
@@ -3206,17 +4183,17 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.work24.go.kr",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)",
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 직업훈련·취업 지원은 고용노동부",
     "doc": "고령자고용법 제15조 (중장년 고용지원) · 고용24 전문인력 활용"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "cert-electric",
@@ -3233,12 +4210,12 @@
      "value": "필기 67,010명 · 실기 37,565명"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "선임 형태에 따라 약 250만~350만원"
+     "label": "전기∙전자기기 설치 및 수리원 월 평균 임금 (2025년)",
+     "value": "451만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 합격률이 37.8%로 세 명 중 두 명이 떨어집니다. 6만 7천 명이 필기를 보고 실기까지 간 사람은 3만 7천 명입니다. 실기는 71.9%로 수월한 편이라 필기가 관문입니다. 산업기사 이상은 응시 자격에 경력이나 관련 학력이 필요합니다.",
-   "monthly_income_won": 2800000,
+   "monthly_income_won": 4513000,
    "startup_cost_won": 1000000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -3261,14 +4238,18 @@
     "org": "한국산업인력공단",
     "year": 2026,
     "url": "https://www.q-net.or.kr",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요",
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"전기∙전자기기 설치 및 수리원(761)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다",
     "doc": "전기안전관리법 제22조 (전기안전관리자의 선임)"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 24,
+   "related_fields": [
+    "electric"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-barista",
@@ -3315,7 +4296,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 6,
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-social-worker",
@@ -3358,11 +4343,17 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "public",
+    "office"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-convenience",
    "category": "business",
+   "free": true,
    "name": "편의점 가맹",
    "summary": "본사 시스템으로 운영하는 24시간 소매점",
    "figures": [
@@ -3410,7 +4401,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-online",
@@ -3457,11 +4451,15 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "odd-school-support",
    "category": "odd",
+   "free": true,
    "name": "학교 지원 인력",
    "summary": "돌봄, 교통안전, 급식 보조 등 학교 관련 일자리",
    "figures": [
@@ -3495,21 +4493,22 @@
     }
    ],
    "source": {
-    "org": "교육부",
+    "org": "고용노동부",
     "year": 2026,
     "url": "https://www.moe.go.kr",
-    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 시도교육청 채용공고",
+    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 시도교육청 채용공고. 채용은 시도교육청 공고",
     "doc": "교육공무직원 관련 시도교육청 채용공고"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "farm-weekend",
    "category": "farm",
+   "free": true,
    "name": "주말농장·텃밭",
    "summary": "귀농 전에 농사를 먼저 겪어 보는 방법",
    "figures": [
@@ -3552,11 +4551,15 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "etc"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-cafe",
    "category": "business",
+   "free": true,
    "name": "카페",
    "summary": "퇴직자가 가장 많이 떠올리는 창업",
    "figures": [
@@ -3594,7 +4597,7 @@
     }
    ],
    "source": {
-    "org": "통계청",
+    "org": "공정거래위원회",
     "year": 2026,
     "url": "https://kostat.go.kr",
     "doc": "기업생멸행정통계 (숙박·음식점업 생존율)",
@@ -3604,7 +4607,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-chicken",
@@ -3656,7 +4662,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-snack",
@@ -3703,7 +4712,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-laundry",
@@ -3749,17 +4761,20 @@
     }
    ],
    "source": {
-    "org": "공정거래위원회",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://franchise.ftc.go.kr",
     "doc": "가맹사업거래 정보공개서",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 가맹 관련 정보공개서는 공정거래위원회"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-unmanned",
@@ -3806,7 +4821,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-studycafe",
@@ -3854,7 +4872,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-coin-laundry",
@@ -3901,7 +4922,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-realestate-office",
@@ -3946,17 +4970,20 @@
     }
    ],
    "source": {
-    "org": "국토교통부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.molit.go.kr",
     "doc": "공인중개사법 제13조 (중개사무소의 개설등록)",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 공인중개사 제도는 국토교통부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-academy",
@@ -3993,17 +5020,20 @@
     }
    ],
    "source": {
-    "org": "교육부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.moe.go.kr",
     "doc": "학원의 설립·운영 및 과외교습에 관한 법률 제6조 (학원 설립·운영의 등록)",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 학원 등록은 교육청"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-pension-stay",
@@ -4041,17 +5071,20 @@
     }
    ],
    "source": {
-    "org": "농림축산식품부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.returnfarm.com",
     "doc": "농어촌정비법 제86조 (농어촌민박사업)",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 농어촌민박 지정은 농림축산식품부·지자체"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-shared-kitchen",
@@ -4098,7 +5131,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-delivery-agency",
@@ -4131,17 +5167,20 @@
     }
    ],
    "source": {
-    "org": "국토교통부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.molit.go.kr",
     "doc": "생활물류서비스산업발전법",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 화물운송 제도는 국토교통부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-truck",
@@ -4183,17 +5222,20 @@
     }
    ],
    "source": {
-    "org": "국토교통부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.molit.go.kr",
     "doc": "화물자동차 운수사업법 제3조 (화물자동차 운송사업의 허가)",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 화물운송 제도는 국토교통부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-homecare-center",
@@ -4230,17 +5272,20 @@
     }
    ],
    "source": {
-    "org": "보건복지부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.longtermcare.or.kr",
     "doc": "노인복지법 제39조 (재가노인복지시설의 설치) · 노인장기요양보험법 제31조 (장기요양기관의 지정)",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 장기요양기관 지정은 보건복지부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-pet",
@@ -4277,17 +5322,20 @@
     }
    ],
    "source": {
-    "org": "농림축산식품부",
+    "org": "중소벤처기업부",
     "year": 2026,
     "url": "https://www.mafra.go.kr",
     "doc": "동물보호법 제73조 (반려동물 관련 영업의 허가·등록)",
-    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준"
+    "note": "중소벤처기업부 소상공인실태조사. 매출·영업이익은 2023년 조사, 창업비용은 2024년 조사 기준. 동물 관련 영업 허가는 농림축산식품부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-cleaning",
@@ -4339,7 +5387,174 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
+  },
+  {
+   "id": "cert-labor-attorney",
+   "category": "cert",
+   "name": "공인노무사",
+   "summary": "노동 관계 법령을 다루는 전문자격. 개업하거나 기업 인사 부서로 간다",
+   "lead_months": 120,
+   "figures": [
+    {
+     "label": "합격률 (2025년)",
+     "value": "1차 49.4% · 2차 7.6%"
+    },
+    {
+     "label": "응시 규모 (2025년)",
+     "value": "1차 10,238명 중 5,054명 합격 · 2차 5,473명 중 418명"
+    },
+    {
+     "label": "시험 구조",
+     "value": "1차·2차·3차(면접), 연 1회. 2차는 논술형"
+    },
+    {
+     "label": "개업 시 연 매출 (2025년)",
+     "value": "1인당 평균 1억 300만원 · 경비 차감 전"
+    }
+   ],
+   "hard_truth": "2차 합격률이 7.6%입니다. 2025년에 2차를 본 5,473명 중 418명만 붙었습니다. 직장에 다니면서 붙는 경우가 없지는 않지만 대부분 몇 해를 씁니다. 퇴직 2~3년 전에 시작하면 시간이 모자랍니다. 개업하면 국세청 신고 기준 1인당 연 매출이 평균 1억 300만원이지만, 이것은 매출이지 손에 남는 돈이 아닙니다. 사무실 임차료와 직원 인건비를 빼야 하고, 신고한 874명 안에는 수십 년 된 사무소도 함께 들어 있습니다.",
+   "monthly_income_won": null,
+   "evaluation_rules": [
+    {
+     "conditions": {
+      "direction": [
+       "cert"
+      ]
+     },
+     "verdict": "fit",
+     "reason": "자격증으로 방향을 잡으셨고 준비 기간도 남아 있습니다. 다만 2차 합격률이 낮아 여러 해를 각오하셔야 합니다."
+    }
+   ],
+   "default_verdict": "review",
+   "source": {
+    "org": "한국산업인력공단",
+    "year": 2026,
+    "url": "https://www.q-net.or.kr",
+    "note": "합격률은 한국산업인력공단 2025년 검정 현황. 개업 매출은 국세청 2025년 부가가치세 신고(개인사업자) 과세표준을 신고 인원으로 나눈 값입니다. 매출이라 경비를 빼기 전입니다",
+    "doc": "공인노무사법 제3조의2 (자격시험)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "related_fields": [
+    "office",
+    "public"
+   ],
+   "version": "2026.2"
+  },
+  {
+   "id": "cert-tax-accountant",
+   "category": "cert",
+   "name": "세무사",
+   "summary": "세무 대리와 기장을 하는 전문자격. 개업이 가능하고 정년이 없다",
+   "lead_months": 120,
+   "figures": [
+    {
+     "label": "합격률 (2025년)",
+     "value": "1차 22.6% · 2차 10.5%"
+    },
+    {
+     "label": "응시 규모 (2025년)",
+     "value": "1차 18,708명 응시"
+    },
+    {
+     "label": "시험 구조",
+     "value": "1차·2차, 연 1회. 2차는 논술형"
+    },
+    {
+     "label": "개업 시 연 매출 (2025년)",
+     "value": "1인당 평균 3억 3,900만원 · 경비 차감 전"
+    }
+   ],
+   "hard_truth": "1차와 2차를 모두 통과할 확률이 낮습니다. 붙어도 개업 초기에는 기장 거래처를 모으는 데 시간이 걸리고, 이미 자리 잡은 사무소와 가격으로 경쟁하게 됩니다. 개업하면 국세청 신고 기준 1인당 연 매출이 평균 3억 3,900만원이지만, 이것은 매출이지 손에 남는 돈이 아닙니다. 사무실 임차료와 직원 인건비를 빼야 하고, 신고한 10,898명 안에는 수십 년 된 사무소도 함께 들어 있습니다.",
+   "monthly_income_won": null,
+   "evaluation_rules": [
+    {
+     "conditions": {
+      "direction": [
+       "cert"
+      ]
+     },
+     "verdict": "fit",
+     "reason": "자격증으로 방향을 잡으셨고 준비 기간도 남아 있습니다. 다만 2차 합격률이 낮아 여러 해를 각오하셔야 합니다."
+    }
+   ],
+   "default_verdict": "review",
+   "source": {
+    "org": "한국산업인력공단",
+    "year": 2026,
+    "url": "https://www.q-net.or.kr",
+    "note": "합격률은 한국산업인력공단 2025년 검정 현황. 개업 매출은 국세청 2025년 부가가치세 신고(개인사업자) 과세표준을 신고 인원으로 나눈 값입니다. 매출이라 경비를 빼기 전입니다",
+    "doc": "세무사법 제5조 (세무사 자격시험)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "related_fields": [
+    "finance"
+   ],
+   "version": "2026.2"
+  },
+  {
+   "id": "cert-appraiser",
+   "category": "cert",
+   "name": "감정평가사",
+   "summary": "토지·건물의 값을 매기는 전문자격. 법인 소속이나 개업으로 일한다",
+   "lead_months": 120,
+   "figures": [
+    {
+     "label": "합격률 (2025년)",
+     "value": "1차 28.6% · 2차 6.7%"
+    },
+    {
+     "label": "응시 규모 (2025년)",
+     "value": "1차 6,702명 중 1,914명 합격"
+    },
+    {
+     "label": "시험 구조",
+     "value": "1차·2차, 연 1회. 2차는 논술형"
+    },
+    {
+     "label": "개업 시 연 매출 (2025년)",
+     "value": "1인당 평균 1억 2,500만원 · 경비 차감 전"
+    }
+   ],
+   "hard_truth": "2차 합격률이 6.7%로 이 목록에서 가장 낮은 축입니다. 자격을 얻어도 실무 수습을 거쳐야 하고, 일감이 부동산 경기에 따라 크게 흔들립니다. 개업하면 국세청 신고 기준 1인당 연 매출이 평균 1억 2,500만원이지만, 이것은 매출이지 손에 남는 돈이 아닙니다. 사무실 임차료와 직원 인건비를 빼야 하고, 신고한 942명 안에는 수십 년 된 사무소도 함께 들어 있습니다.",
+   "monthly_income_won": null,
+   "evaluation_rules": [
+    {
+     "conditions": {
+      "direction": [
+       "cert"
+      ]
+     },
+     "verdict": "fit",
+     "reason": "자격증으로 방향을 잡으셨고 준비 기간도 남아 있습니다. 다만 2차 합격률이 낮아 여러 해를 각오하셔야 합니다."
+    }
+   ],
+   "default_verdict": "review",
+   "source": {
+    "org": "한국산업인력공단",
+    "year": 2026,
+    "url": "https://www.q-net.or.kr",
+    "note": "합격률은 한국산업인력공단 2025년 검정 현황. 개업 매출은 국세청 2025년 부가가치세 신고(개인사업자) 과세표준을 신고 인원으로 나눈 값입니다. 매출이라 경비를 빼기 전입니다",
+    "doc": "감정평가 및 감정평가사에 관한 법률 제14조 (감정평가사시험)"
+   },
+   "checked": {
+    "method": "primary-source",
+    "date": "2026-09-06"
+   },
+   "related_fields": [
+    "construct",
+    "finance"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-excavator",
@@ -4382,7 +5597,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "production",
+    "machine"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-fire-safety",
@@ -4399,12 +5619,12 @@
      "value": "강습 교육 이수 후 시험"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "겸직·상주 여부에 따라 편차가 큼"
+     "label": "소방∙방재 기술자 및 안전 관리원 월 평균 임금 (2025년)",
+     "value": "479만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "2급은 해마다 1만 6천 명이 새로 자격을 땁니다. 취득자가 그만큼 쌓여 자격만으로는 변별력이 없습니다. 상주 선임 자리는 1급 이상을 요구하는 경우가 많고, 겸직 자리는 급여가 낮습니다.",
-   "monthly_income_won": 2400000,
+   "monthly_income_won": 4798000,
    "startup_cost_won": 400000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4424,13 +5644,17 @@
     "year": 2026,
     "url": "https://www.nfa.go.kr",
     "doc": "화재의 예방 및 안전관리에 관한 법률 제24조 (소방안전관리자 선임)",
-    "note": "한국소방안전원 소방안전관리자 시험 통계. 급여 수준은 개별 확인 필요"
+    "note": "한국소방안전원 소방안전관리자 시험 통계. 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"소방∙방재 기술자 및 안전 관리원\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 6,
+   "related_fields": [
+    "electric"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-hazardous",
@@ -4477,7 +5701,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "production"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-gas",
@@ -4496,10 +5724,14 @@
     {
      "label": "취득 기간·비용",
      "value": "3~4개월, 50만~80만원"
+    },
+    {
+     "label": "환경공학∙가스∙에너지 기술자 및 시험원 월 평균 임금 (2025년)",
+     "value": "507만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 합격률이 19.5%입니다. 다섯 명 중 한 명만 붙습니다. 1만 5천 명이 필기를 봤는데 실기까지 간 사람은 4,738명뿐입니다. 실기는 70.5%로 수월하지만 필기에서 대부분 걸립니다. 쉽게 딸 수 있는 자격이라고 생각하고 시작하면 시간과 비용만 씁니다.",
-   "monthly_income_won": 2600000,
+   "monthly_income_won": 5078000,
    "startup_cost_won": 700000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4514,13 +5746,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "고압가스 안전관리법 제15조 (안전관리자)",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"환경공학∙가스∙에너지 기술자 및 시험원(237)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "machine"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-energy",
@@ -4537,12 +5773,12 @@
      "value": "필기 9,217명 · 실기 5,140명"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "약 230만~300만원"
+     "label": "환경공학∙가스∙에너지 기술자 및 시험원 월 평균 임금 (2025년)",
+     "value": "507만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 42.8%, 실기 60.3%로 중간 난도입니다. 겨울에 일이 몰리고 야간 당직이 있습니다. 건물이 노후할수록 고장 대응 부담이 커집니다.",
-   "monthly_income_won": 2600000,
+   "monthly_income_won": 5078000,
    "startup_cost_won": 500000,
    "default_verdict": "fit",
    "evaluation_rules": [
@@ -4562,13 +5798,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "에너지이용 합리화법 제40조 (검사대상기기관리자)",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"환경공학∙가스∙에너지 기술자 및 시험원(237)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "machine"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-elevator",
@@ -4587,10 +5827,14 @@
     {
      "label": "취득 기간·비용",
      "value": "3~4개월, 60만원 안팎"
+    },
+    {
+     "label": "기계장비 설치 및 정비원 월 평균 임금 (2025년)",
+     "value": "536만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 합격률이 21.7%로 낮습니다. 1만 5천 명이 필기를 봤지만 실기 응시자는 4,437명입니다. 유지관리 업체 취업은 고소·협소 공간 작업이 많아 나이 제한이 사실상 있습니다. 건물 자체 선임 자리가 상대적으로 접근하기 쉽습니다.",
-   "monthly_income_won": 2700000,
+   "monthly_income_won": 5367000,
    "startup_cost_won": 600000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4605,13 +5849,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "승강기 안전관리법 제29조 (승강기 안전관리자)",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"기계장비 설치 및 정비원(753)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "electric"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-hvac",
@@ -4628,12 +5876,12 @@
      "value": "필기 8,931명 · 실기 3,901명"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "약 250만~320만원"
+     "label": "기계장비 설치 및 정비원 월 평균 임금 (2025년)",
+     "value": "536만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 27.9%, 실기 44.5%로 둘 다 만만치 않습니다. 취득해도 전기·보일러 자격을 함께 가진 사람과 경쟁합니다. 자격 하나만으로는 설비팀 채용에서 밀리는 경우가 많습니다.",
-   "monthly_income_won": 2700000,
+   "monthly_income_won": 5367000,
    "startup_cost_won": 700000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4652,13 +5900,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "국가기술자격법 시행령 별표 4의2",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"기계장비 설치 및 정비원(753)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "machine"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-industrial-safety",
@@ -4677,10 +5929,14 @@
     {
      "label": "응시 자격",
      "value": "산업기사는 관련 경력 2년, 기사는 4년"
+    },
+    {
+     "label": "소방∙방재 기술자 및 안전 관리원 월 평균 임금 (2025년)",
+     "value": "479만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 39.0%, 실기 60.6%입니다. 필기 응시자가 3만 8천 명으로 많은데, 응시 자격에 경력이나 학력이 필요해 아무나 볼 수 없습니다. 선임되면 사고 발생 시 책임 범위 안에 들어간다는 점을 감안하셔야 합니다.",
-   "monthly_income_won": 3200000,
+   "monthly_income_won": 4798000,
    "startup_cost_won": 1000000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4700,13 +5956,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "산업안전보건법 제17조 (안전관리자) · 국가기술자격법 시행령 별표 4의2",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"소방∙방재 기술자 및 안전 관리원(236)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 24,
+   "related_fields": [
+    "production"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-house-manager",
@@ -4749,7 +6009,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-job-counselor",
@@ -4797,7 +6061,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "office",
+    "public"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-lifelong-educator",
@@ -4814,12 +6083,12 @@
      "value": "1~2년, 200만원 안팎"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "기관에 따라 약 200만~260만원"
+     "label": "기타 교육 전문가 월 평균 임금 (2025년)",
+     "value": "336만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "정규직 자리는 매우 적고 대부분 계약직입니다. 실습이 필수인데 실습 기관을 구하는 것부터 쉽지 않습니다.",
-   "monthly_income_won": 2200000,
+   "monthly_income_won": 3363000,
    "startup_cost_won": 2000000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4834,13 +6103,18 @@
     "year": 2026,
     "url": "https://www.nile.or.kr",
     "doc": "평생교육법 제24조 (평생교육사)",
-    "note": "급여 수준은 기관별 확인 필요"
+    "note": "임금은 고용노동부 2025년 고용형태별노동실태조사의 \"기타 교육 전문가(259)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "public",
+    "office"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-korean-cook",
@@ -4857,12 +6131,12 @@
      "value": "필기 61,122명 · 실기 38,824명"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "급식 조리원 기준 약 200만~250만원"
+     "label": "조리사 월 평균 임금 (2025년)",
+     "value": "254만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "실기 합격률이 36.7%로 조리 기능사 중에서도 낮은 편입니다. 필기에 6만 1천 명, 실기에 3만 8천 명이 응시합니다. 급식 조리는 정해진 시간에 대량으로 만드는 일이라 육체 강도가 높습니다. 식당 창업으로 이어지면 그때부터는 자격이 아니라 상권 문제가 됩니다.",
-   "monthly_income_won": 2200000,
+   "monthly_income_won": 2544000,
    "startup_cost_won": 800000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4881,13 +6155,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "식품위생법 제53조 (조리사 면허)",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"조리사(441)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-bakery",
@@ -4904,12 +6182,12 @@
      "value": "필기 46,965명 · 실기 24,061명"
     },
     {
-     "label": "취업 시 월 소득",
-     "value": "경력 없이 시작하면 200만원 안팎"
+     "label": "조리사 월 평균 임금 (2025년)",
+     "value": "254만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "실기 합격률이 40.6%입니다. 필기에 4만 7천 명이 응시할 만큼 인기가 높아 자격자가 계속 늘어납니다. 새벽 근무가 기본이고 서서 일하는 시간이 깁니다. 창업은 설비 투자가 크고 재료비·폐기율 관리가 어려워 실패가 잦습니다.",
-   "monthly_income_won": 2000000,
+   "monthly_income_won": 2544000,
    "startup_cost_won": 1200000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -4928,13 +6206,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "국가기술자격법 시행령 별표 4의2",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"조리사(441)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-landscape",
@@ -4982,7 +6264,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-forestry",
@@ -5025,7 +6311,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-tree-doctor",
@@ -5071,7 +6361,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-wallpaper",
@@ -5114,7 +6408,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-painting",
@@ -5157,7 +6455,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-auto-repair",
@@ -5174,12 +6476,12 @@
      "value": "필기 15,303명 · 실기 7,883명"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "경력 없이 시작하면 220만원 안팎"
+     "label": "운송장비 정비원 월 평균 임금 (2025년)",
+     "value": "529만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "필기 42.9%, 실기 67.2%입니다. 다만 전기차 전환으로 기존 내연기관 정비 수요가 줄어드는 추세이고, 경력 없는 50대 신규 채용은 많지 않습니다. 자격을 따는 것보다 받아 주는 정비소를 찾는 것이 어렵습니다.",
-   "monthly_income_won": 2300000,
+   "monthly_income_won": 5297000,
    "startup_cost_won": 1000000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -5194,13 +6496,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "자동차관리법 제53조 (자동차관리사업)",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"운송장비 정비원(752)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "machine"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-loss-adjuster",
@@ -5246,7 +6552,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "finance"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-logistics",
@@ -5263,12 +6573,12 @@
      "value": "62.56% (접수자 대비)"
     },
     {
-     "label": "취득 후 월 소득",
-     "value": "관리직 기준 약 280만~350만원"
+     "label": "운송 관련 단순 노무직 월 평균 임금 (2025년)",
+     "value": "335만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "합격률이 33.38%로 세 명 중 두 명이 떨어집니다. 다만 자격보다 물류 실무 경력을 먼저 봅니다. 경력이 없으면 자격이 있어도 현장직부터 시작하게 되는 경우가 많습니다.",
-   "monthly_income_won": 3000000,
+   "monthly_income_won": 3358000,
    "startup_cost_won": 800000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -5288,13 +6598,17 @@
     "year": 2026,
     "url": "https://www.q-net.or.kr",
     "doc": "물류정책기본법 제51조 (물류관리사 자격시험)",
-    "note": "한국산업인력공단 2025년 국가전문자격 시험 결과 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요"
+    "note": "한국산업인력공단 2025년 국가전문자격 시험 결과 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"운송 관련 단순 노무직(92)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "finance"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-distribution",
@@ -5340,7 +6654,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-sports-leader",
@@ -5388,7 +6706,11 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "public"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-korean-teacher",
@@ -5436,7 +6758,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "public",
+    "office"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-computer",
@@ -5482,7 +6809,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 6,
+   "related_fields": [
+    "office",
+    "it"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "farm-land-pension",
@@ -5529,7 +6861,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "etc"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "farm-experience",
@@ -5576,7 +6911,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "etc"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "farm-forest-work",
@@ -5609,17 +6947,20 @@
     }
    ],
    "source": {
-    "org": "산림청",
+    "org": "한국산업인력공단",
     "year": 2026,
     "url": "https://www.forest.go.kr",
     "doc": "산림자원의 조성 및 관리에 관한 법률",
-    "note": "한국산업인력공단 2025년 검정 현황 / 산림청 산림사업 안내"
+    "note": "한국산업인력공단 2025년 검정 현황 / 산림청 산림사업 안내. 산림사업 안내는 산림청"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "farm-urban",
@@ -5667,7 +7008,10 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "etc"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "odd-parking",
@@ -5714,7 +7058,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "odd-parttime-retail",
@@ -5762,7 +7106,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "odd-library",
@@ -5800,17 +7144,17 @@
     }
    ],
    "source": {
-    "org": "문화체육관광부",
+    "org": "고용노동부",
     "year": 2026,
     "url": "https://www.mcst.go.kr",
     "doc": "도서관법 · 지자체 공공기관 채용공고",
-    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 보건복지부 2026년 노인일자리 지침"
+    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 보건복지부 2026년 노인일자리 지침. 시설 운영은 문화체육관광부·지자체"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "odd-silver-delivery",
@@ -5857,7 +7201,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "odd-care-helper",
@@ -5905,7 +7249,7 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "reemploy-smb-manager",
@@ -5948,17 +7292,22 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.moel.go.kr",
     "doc": "고령자 고용동향 · 중장년 재취업 임금 수준",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "finance",
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-partner-company",
@@ -5996,17 +7345,27 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.moel.go.kr",
     "doc": "공직자윤리법 제17조 (퇴직공직자의 취업제한)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "it",
+    "electric",
+    "machine",
+    "construct",
+    "finance",
+    "sales",
+    "production"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-senior-internship",
@@ -6044,17 +7403,21 @@
     }
    ],
    "source": {
-    "org": "보건복지부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.mohw.go.kr",
     "doc": "노인일자리 및 사회활동 지원사업 (시장형·취업알선형)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 노인일자리 사업은 보건복지부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "public"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-social-enterprise",
@@ -6092,17 +7455,17 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.socialenterprise.or.kr",
     "doc": "사회적기업 육성법 제10조 (재정지원)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 사회적기업 인증은 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "reemploy-apartment-office",
@@ -6140,17 +7503,22 @@
     }
    ],
    "source": {
-    "org": "국토교통부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.molit.go.kr",
     "doc": "공동주택관리법 제64조 (관리사무소장의 업무)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 공동주택 관리 제도는 국토교통부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "construct",
+    "machine",
+    "office"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-facility",
@@ -6188,17 +7556,22 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.work24.go.kr",
     "doc": "고용24 채용정보 (시설관리 직종)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "electric",
+    "machine",
+    "construct"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-hospital-admin",
@@ -6231,17 +7604,17 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.work24.go.kr",
     "doc": "고용24 채용정보 (의료 사무 직종)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "reemploy-logistics-center",
@@ -6283,17 +7656,21 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.work24.go.kr",
     "doc": "고용24 채용정보 (물류 직종)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "production",
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-callcenter",
@@ -6326,17 +7703,21 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.work24.go.kr",
     "doc": "산업안전보건법 제41조 (고객의 폭언 등으로 인한 건강장해 예방)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-instructor",
@@ -6382,17 +7763,22 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.work24.go.kr",
     "doc": "근로자직업능력 개발법 제33조 (직업능력개발훈련교사)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 직업훈련 제도는 고용노동부"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "public",
+    "it"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-sales",
@@ -6428,21 +7814,22 @@
     }
    ],
    "source": {
-    "org": "공정거래위원회",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.ftc.go.kr",
     "doc": "방문판매 등에 관한 법률 제5조 (방문판매업자의 신고)",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)"
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 방문판매 규제는 공정거래위원회"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "reemploy-same-industry",
    "category": "reemploy",
+   "free": true,
    "name": "같은 업종 재취업",
    "summary": "하던 일을 규모가 작은 회사에서 이어가는 경로",
    "figures": [
@@ -6480,21 +7867,33 @@
     }
    ],
    "source": {
-    "org": "고용노동부",
+    "org": "통계청",
     "year": 2026,
     "url": "https://www.moel.go.kr",
-    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세)",
+    "note": "통계청 2025년 5월 경제활동인구조사 고령층 부가조사 (55~79세). 고용 제도는 고용노동부",
     "doc": "고용노동부 고령자 고용동향 · 중장년 재취업 임금 수준"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "office",
+    "it",
+    "electric",
+    "machine",
+    "construct",
+    "finance",
+    "sales",
+    "production",
+    "public"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "reemploy-senior-job",
    "category": "reemploy",
+   "free": true,
    "name": "정부·지자체 노인일자리",
    "summary": "만 65세 이상 대상 공익활동형과 사회서비스형",
    "figures": [
@@ -6533,11 +7932,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "cert-care-worker",
    "category": "cert",
+   "free": true,
    "name": "요양보호사",
    "summary": "교육 이수 후 국가시험, 요양기관·방문요양 근무",
    "figures": [
@@ -6580,7 +7980,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 6,
+   "related_fields": [
+    "public",
+    "office"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-forklift",
@@ -6599,10 +8004,14 @@
     {
      "label": "취득 기간·비용",
      "value": "학원 2~3주, 약 40만~60만원"
+    },
+    {
+     "label": "물품 이동 장비 조작원 월 평균 임금 (2025년)",
+     "value": "444만원 · 경력자 포함 전체 평균"
     }
    ],
    "hard_truth": "2025년 한 해에만 실기에 12만 6,757명이 응시해 절반 가까이가 자격을 땄습니다. 국가기술자격 중 응시자가 가장 많은 축입니다. 매년 6만 명씩 자격자가 늘어나므로 자격만으로는 채용이 되지 않고 현장 경력을 함께 봅니다.",
-   "monthly_income_won": 2700000,
+   "monthly_income_won": 4445000,
    "startup_cost_won": 500000,
    "default_verdict": "review",
    "evaluation_rules": [
@@ -6616,18 +8025,24 @@
     "org": "한국산업인력공단",
     "year": 2026,
     "url": "https://www.q-net.or.kr",
-    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금 수준은 별도 확인 필요",
+    "note": "한국산업인력공단 2025년 검정 현황 (큐넷 종목별 상세정보). 임금은 고용노동부 2025년 고용형태별노동실태조사의 \"물품 이동 장비 조작원(874)\" 월임금총액입니다. 경력자를 포함한 평균이라 자격만 갖고 시작하면 이보다 낮습니다",
     "doc": "국가기술자격법 시행령 별표 4의2 · 건설기계관리법 제26조 (조종사 면허)"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 12,
+   "related_fields": [
+    "production",
+    "machine"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "cert-realtor",
    "category": "cert",
+   "free": true,
    "name": "공인중개사",
    "summary": "시험 합격 후 개업 또는 중개보조원으로 시작",
    "figures": [
@@ -6669,7 +8084,12 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "lead_months": 36,
+   "related_fields": [
+    "construct",
+    "finance"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-restaurant",
@@ -6723,14 +8143,17 @@
     "org": "통계청",
     "year": 2026,
     "url": "https://kostat.go.kr",
-    "note": "공정거래위원회 2025년 가맹사업 현황 통계 (2024년 기준). 매출액은 가맹점 평균 매출이며 이익이 아닙니다 / 국가데이터처 2024년 기업생멸행정통계. 5년 생존율은 2018년 신생기업 기준, 1년 생존율은 2022년 신생기업 기준",
+    "note": "국가데이터처 2024년 기업생멸행정통계. 5년 생존율은 2018년 신생기업 기준, 1년 생존율은 2022년 신생기업 기준 / 공정거래위원회 2025년 가맹사업 현황 통계 (2024년 기준). 매출액은 가맹점 평균 매출이며 이익이 아닙니다",
     "doc": "통계청 기업생멸행정통계 · 공정거래위원회 가맹사업 현황 통계"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "business-franchise",
@@ -6777,11 +8200,15 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "sales"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "farm-return",
    "category": "farm",
+   "free": true,
    "name": "귀농",
    "summary": "농지를 사거나 빌려 작물을 재배하는 경로",
    "figures": [
@@ -6824,7 +8251,10 @@
     "date": "2026-09-05"
    },
    "monthly_income_won": 2750000,
-   "version": "2026.1"
+   "related_fields": [
+    "etc"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "farm-rural-stay",
@@ -6870,11 +8300,15 @@
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "related_fields": [
+    "etc"
+   ],
+   "version": "2026.2"
   },
   {
    "id": "odd-security",
    "category": "odd",
+   "free": true,
    "name": "시설 경비·미화",
    "summary": "신임교육 이수 후 아파트·건물 근무",
    "figures": [
@@ -6907,17 +8341,17 @@
     }
    ],
    "source": {
-    "org": "경찰청",
+    "org": "고용노동부",
     "year": 2026,
     "url": "https://www.police.go.kr",
-    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 보건복지부 2026년 노인일자리 지침",
+    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 보건복지부 2026년 노인일자리 지침. 경비원 배치 신고는 경찰청",
     "doc": "경비업법 제13조 (경비원의 교육)"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   },
   {
    "id": "odd-delivery",
@@ -6950,17 +8384,17 @@
     }
    ],
    "source": {
-    "org": "국토교통부",
+    "org": "고용노동부",
     "year": 2026,
     "url": "https://www.molit.go.kr",
-    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 보건복지부 2026년 노인일자리 지침",
+    "note": "2026년 최저임금 시간당 10,320원 (고용노동부 고시) / 보건복지부 2026년 노인일자리 지침. 운송 사업 제도는 국토교통부",
     "doc": "여객자동차 운수사업법 제24조 (운전업무 종사자격) · 생활물류서비스산업발전법"
    },
    "checked": {
     "method": "primary-source",
     "date": "2026-09-05"
    },
-   "version": "2026.1"
+   "version": "2026.2"
   }
  ],
  "cases": [
@@ -6969,140 +8403,140 @@
    "persona": "50대 후반, 금융권 출신",
    "body": "퇴직금을 일시금으로 받아 대출을 갚고 남은 돈을 예금에 넣었습니다. 나중에 IRP로 옮겼으면 세금을 덜 냈다는 것을 알았지만 이미 지급이 끝난 뒤였습니다. 60일 안에 옮기면 환급받을 수 있다는 것도 그때는 몰랐습니다.",
    "takeaway": "퇴직급여 수령 방식은 지급 전에 정해야 선택지가 남습니다. 이미 받았다면 60일이 마지막 기회입니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-early-pension",
    "persona": "60대 초반, 생산직 출신",
    "body": "퇴직 후 소득이 끊겨 국민연금을 5년 당겨 받기 시작했습니다. 매달 30% 적은 금액이 평생 고정됐습니다. 이후 계약직으로 다시 일하게 되면서, 그때 조금 더 버텼으면 하는 생각이 든다고 합니다.",
    "takeaway": "조기 수령은 되돌릴 수 없습니다. 당장 몇 달을 버틸 수 있는지부터 확인하고 정하는 편이 낫습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-training-card",
    "persona": "50대 중반, 사무직 출신",
    "body": "퇴직하고 나서야 내일배움카드를 알아봤습니다. 발급과 훈련 과정 대기까지 두 달이 걸렸고, 그 사이 실업급여 수급 기간이 흘러갔습니다. 재직 중에 카드를 만들어 둔 동료는 퇴직 다음 주에 바로 훈련을 시작했습니다.",
    "takeaway": "제도 대부분은 신청부터 실제 이용까지 시간이 걸립니다. 퇴직 전에 만들어 둘 수 있는 것은 미리 해 두는 편이 낫습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-couple-time",
    "persona": "60대 초반 부부, 남편 정년퇴직",
    "body": "퇴직 후 온종일 함께 있게 되면서 사소한 일로 부딪히는 일이 늘었습니다. 사이가 나빠진 것이 아니라 30년 동안 낮에 따로 있던 생활이 갑자기 바뀐 탓이었습니다. 각자 나가는 요일을 정하고 나서 나아졌다고 합니다.",
-   "takeaway": "퇴직 후 갈등은 감정보다 생활 구조에서 오는 경우가 많다는 이야기가 반복됩니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "takeaway": "퇴직 후 갈등은 감정보다 생활 구조에서 오는 경우가 많다는 점을 미리 알아 두시면 좋습니다.",
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-forklift-start",
    "persona": "50대 후반, 제조 현장직 출신",
    "body": "퇴직 후 지게차 자격을 땄습니다. 자격증을 들고 지원했는데 대부분 경력을 물었고, 처음에는 일당제 보조로 시작했습니다. 반년쯤 지나 현장에 익숙해지면서 고정 일감이 붙었습니다. 자격을 딴 것보다 첫 반년을 버틴 것이 컸다고 합니다.",
    "takeaway": "기능계 자격은 취득이 끝이 아니라 시작입니다. 소득이 낮은 초기 몇 달을 버틸 자금이 있는지 먼저 보셔야 합니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-cafe-close",
    "persona": "50대 후반, 사무직 출신 부부",
    "body": "퇴직금으로 카페를 열었습니다. 매출은 예상 범위였는데 임차료와 인건비를 빼고 나니 두 사람이 온종일 일하고 월 200만원대가 남았습니다. 인건비를 줄이려고 직원을 내보내자 하루 12시간을 서게 됐고, 2년 반 만에 정리했습니다.",
    "takeaway": "매출이 아니라 임차료와 인건비를 뺀 뒤의 금액, 그리고 그 금액을 벌기 위해 서 있어야 하는 시간을 함께 보셔야 합니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-apartment-manager",
    "persona": "60대 초반, 공공기관 출신",
    "body": "주택관리사 시험을 준비해 2년 만에 합격했습니다. 합격 후 바로 소장이 되지는 못하고 관리사무소 경리 업무로 시작했습니다. 3년째에 작은 단지 소장을 맡았는데, 입주자대표회의가 바뀌면서 관리업체가 교체되어 자리를 옮겼습니다.",
    "takeaway": "자격이 자리를 보장하지 않고, 자리가 고용 안정을 보장하지도 않습니다. 준비 기간과 그 이후까지 계산에 넣으셔야 합니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-unmanned-store",
    "persona": "50대 중반, 영업직 출신",
    "body": "인건비가 들지 않는다는 말에 무인 점포를 열었습니다. 실제로는 재고 채우기와 청소로 하루 두세 번 나갔고, 도난도 잦았습니다. 반년 뒤 근처에 같은 업종이 두 곳 더 생기면서 매출이 나뉘었습니다.",
    "takeaway": "진입이 쉬운 업종은 경쟁자도 쉽게 들어옵니다. 인건비가 없다는 것은 본인 시간이 대신 들어간다는 뜻입니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-partner-move",
    "persona": "50대 후반, 대기업 구매 담당 출신",
    "body": "재직 중 거래하던 협력업체에서 제안을 받아 퇴직 후 바로 옮겼습니다. 급여는 예전의 70% 수준이지만 업무를 이미 알고 있어 적응이 빨랐습니다. 재직 중에 만들어 둔 관계가 아니었으면 성사되지 않았을 것이라고 합니다.",
    "takeaway": "가장 성사율이 높은 경로는 재직 중에 만들어집니다. 퇴직한 뒤에 알아보면 늦습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-fixed-cost",
    "persona": "60대 초반, 중견기업 출신",
    "body": "퇴직 후 첫 달 카드 명세서를 놓고 하나씩 지웠습니다. 회사가 내주던 통신비, 안 보던 구독 서비스, 중복된 보험을 정리하니 매달 나가는 돈이 40만원 가까이 줄었습니다. 재취업으로 40만원을 더 버는 것보다 빨랐다고 합니다.",
    "takeaway": "소득을 늘리는 것보다 고정비를 줄이는 쪽이 확실하고 빠른 경우가 많습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-early-decision",
    "persona": "60대 초반, 정년퇴직",
    "body": "퇴직 두 달 만에 집을 줄여 이사하고 남은 돈으로 상가를 알아봤습니다. 몇 달 뒤 생활권이 바뀐 것이 생각보다 힘들다는 것을 알았고, 상가 투자도 접었습니다. 급하게 결정한 이유는 뭐라도 해야 할 것 같아서였다고 합니다.",
-   "takeaway": "퇴직 직후 몇 달은 판단이 흔들리는 시기라는 이야기가 반복됩니다. 큰 결정은 리듬이 잡힌 뒤로 미루는 편이 안전합니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "takeaway": "퇴직 직후 몇 달은 판단이 흔들리는 시기라는 점을 미리 알아 두시면 좋습니다. 큰 결정은 리듬이 잡힌 뒤로 미루는 편이 안전합니다.",
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-return-farm-back",
    "persona": "50대 후반, 귀농 후 3년",
    "body": "농지와 집을 사서 내려갔습니다. 농사 자체보다 판로를 찾는 것이 어려웠고, 지역 관계에 적응하는 데도 시간이 걸렸습니다. 3년 만에 돌아오기로 했는데 사 두었던 농지와 집이 제값에 팔리지 않아 아직 정리하지 못했습니다.",
    "takeaway": "귀농은 되돌리는 비용이 큽니다. 사기 전에 1년 이상 임차로 살아 보는 편이 훨씬 안전하다는 이야기가 많습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-pension-defer",
    "persona": "60대 초반, 재취업 중",
    "body": "재취업 소득이 있어 국민연금을 5년 미루기로 했습니다. 미루는 동안은 소득으로 생활하고, 나중에 36% 늘어난 금액을 평생 받게 됩니다. 손익분기 나이를 계산해 보고 결정했다고 합니다.",
    "takeaway": "퇴직 후 소득이 있으면 연금을 미루는 선택지가 생깁니다. 손익분기 나이를 먼저 보고 정하는 편이 낫습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-security-work",
    "persona": "60대 중반, 사무직 출신",
    "body": "여러 곳에 지원하다 아파트 경비 일을 시작했습니다. 격일제라 쉬는 날이 있고 초기 비용이 들지 않은 점이 좋았지만, 1년 단위 계약이라 매년 재계약 시기가 되면 마음이 불편하다고 합니다.",
    "takeaway": "초기 비용이 없는 일은 실패해도 잃는 것이 적습니다. 대신 고용이 짧게 끊어진다는 점을 미리 알고 시작하는 편이 낫습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-restaurant-loss",
    "persona": "50대 후반, 제조 대기업 관리직 출신",
    "body": "퇴직금 대부분을 넣어 상권이 좋다는 자리에 식당을 열었습니다. 첫해 매출은 나쁘지 않았지만 인건비와 임차료를 빼고 나니 손에 남는 돈이 예전 월급의 절반이었습니다. 2년째에 주방 인력이 나가면서 본인이 하루 12시간을 서게 됐고, 3년째에 정리했습니다. 권리금은 절반도 회수하지 못했습니다.",
    "takeaway": "매출이 아니라 인건비와 임차료를 뺀 뒤의 숫자로 판단하는 편이 안전합니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-cert-shelf",
    "persona": "50대 중반, 사무직 출신",
    "body": "퇴직 전 1년 동안 자격증 세 개를 땄습니다. 학원비로 300만원 정도가 들었습니다. 막상 지원해 보니 자격증보다 해당 분야 경력을 먼저 물었고, 경력이 없어 서류에서 걸러졌습니다. 결국 자격증과 무관한 일로 재취업했습니다.",
    "takeaway": "자격증을 따기 전에 그 자격으로 채용하는 공고를 먼저 찾아보면 판단이 빨라집니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-health-premium",
    "persona": "50대 후반, 공공기관 출신",
    "body": "퇴직 후 첫 건강보험료 고지서를 받고 놀랐습니다. 소득이 없는데도 집과 차 때문에 직장 다닐 때보다 많이 나왔습니다. 임의계속가입 제도를 뒤늦게 알았지만 신청 기한이 지난 뒤였습니다.",
    "takeaway": "임의계속가입은 신청 기한을 넘기면 되돌릴 수 없습니다. 퇴직 전에 확인해 두는 편이 좋습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-reemploy-adjust",
    "persona": "60대 초반, 중견기업 부장 출신",
    "body": "같은 업종의 작은 회사에 재취업했습니다. 급여는 예전의 60% 수준이고 직급도 없어졌습니다. 처음 반년은 그 부분이 계속 걸렸는데, 출근할 곳이 있다는 것이 생각보다 컸습니다. 3년째 다니고 있습니다.",
    "takeaway": "재취업에서 가장 어려운 부분은 조건이 아니라 직급과 권한이 내려가는 것을 받아들이는 일이라는 이야기가 많습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-child-support",
    "persona": "50대 후반, 대기업 출신, 자녀 둘",
    "body": "퇴직금에서 자녀 결혼 자금과 전세 보증금을 지원했습니다. 그때는 남은 돈으로 충분하다고 생각했는데, 건강보험료와 부모 간병비가 겹치면서 계획이 틀어졌습니다. 지금은 생활비를 자산에서 계속 헐어 쓰고 있습니다.",
    "takeaway": "지원 금액을 자산 소진 계산에 넣어 보고 결정하면 나중에 되돌리는 상황을 줄일 수 있습니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   },
   {
    "id": "case-first-months",
    "persona": "60대 초반, 30년 근속 후 정년퇴직",
    "body": "퇴직 첫 두 달은 밀린 잠을 자고 여행을 다녔습니다. 세 달째부터 하루가 길어졌습니다. 아침에 나갈 곳이 없다는 것이 가장 힘들었다고 합니다. 도서관 프로그램에 등록하면서 리듬이 잡혔습니다.",
-   "takeaway": "퇴직 직후 몇 달은 큰 결정을 미루고 생활 리듬부터 잡는 편이 낫다는 이야기가 반복됩니다.",
-   "note": "공개된 후기를 종합한 사례"
+   "takeaway": "퇴직 직후 몇 달은 큰 결정을 미루고 생활 리듬부터 잡는 편이 낫다는 점을 미리 알아 두시면 좋습니다.",
+   "note": "앞의 항목에 적힌 제도를 상황으로 풀어 본 예입니다. 실제 사례가 아닙니다."
   }
  ]
 }
